@@ -1,6 +1,6 @@
-# ayobanton.com: Webflow → Wix Studio migration
+# ayobanton.com: Webflow → Wix migration
 
-A documented, zero-downtime move of [ayobanton.com](https://www.ayobanton.com), a fine-art photography portfolio and print store, from Webflow to Wix Studio. The site keeps the same domain, the same content and the same animations, and gets a refreshed store.
+A documented, zero-downtime move of [ayobanton.com](https://www.ayobanton.com), a fine-art photography portfolio and print store, from Webflow to Wix. The site keeps the same domain, the same content and the same animations, and gets a refreshed store.
 
 This repo holds the plan, the audit of the old site, the URL and redirect maps, the animation inventory, and the scripts used along the way. It deliberately contains **no client images, email addresses or private data**. Those live in a local `private/` folder that is git-ignored.
 
@@ -17,9 +17,9 @@ This repo holds the plan, the audit of the old site, the URL and redirect maps, 
 
 Progress is tracked in [GitHub Issues](../../issues), with one milestone per phase.
 
-## Why a rebuild and not an import
+## How the site moves
 
-Wix can't import a Webflow site. Webflow exports static HTML/CSS/JS, and Wix Studio sites are built in its editor. So the site is rebuilt in Wix Studio to match the old one, with Webflow animations recreated using Wix animations or custom code. See [docs/plan.md](docs/plan.md).
+Wix can't import a Webflow site into its editor. Instead, the pages are kept as code (HTML, CSS and the original animation scripts) and attached to the client's existing Wix site as a **headless frontend**. Wix's "Moving your site to a custom frontend" feature does this while keeping the site's plan, domain and data, and it can switch back. Wix runs the backend (CMS, forms, domain, SEO), so content stays editable in the Wix dashboard. The frontend source is in a separate private repo because it is built on a purchased template. See [docs/plan.md](docs/plan.md).
 
 ## Repo layout
 
