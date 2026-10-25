@@ -1,4 +1,4 @@
-// Usage: node capture-baseline.mjs <baseUrl> <outDir> [--only=name1,name2] [--widths=desktop,mobile] [--settle=1500]   (needs `npm i playwright` + `npx playwright install chromium`)
+// Usage: node capture-baseline.mjs <baseUrl> <outDir> [--only=name1,name2] [--widths=desktop,mobile] [--settle=1500] [--media-fallback=map.json]   (needs `npm i playwright` + `npx playwright install chromium`)
 import { chromium, devices } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,6 +14,8 @@ const PATHS = [
   '/', '/about', '/collections', '/collections/into-dust', '/collections/kind-of-blue',
   '/collections/luminous-bones', '/collections/brutiful', '/store', '/category/into-dust',
   '/product/velvet', '/product/dissolution', '/product/frequency-ii', '/this-page-does-not-exist',
+  // Pages added in the move (no Webflow "before" to compare with).
+  '/contact', '/product/in-cold-light', '/product/chroma-flora-i', '/style-guide',
 ];
 const nameOf = (p) => (p === '/' ? 'home' : p.replace(/^\//, '').replace(/\//g, '_'));
 
@@ -31,6 +33,19 @@ const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manife
 manifest.baseUrl = baseUrl;
 manifest.capturedAt = new Date().toISOString();
 manifest.pages = manifest.pages || {};
+
+// --media-fallback: JSON of Wix Media file id -> another URL or a local file. Serves those images when
+// static.wixstatic.com is unreachable from the capturing machine (some networks block it).
+const fallback = flags['media-fallback'] ? JSON.parse(fs.readFileSync(flags['media-fallback'], 'utf8')) : null;
+async function useFallback(context) {
+  await context.route('https://static.wixstatic.com/media/**', async (route) => {
+    const id = new URL(route.request().url()).pathname.split('/')[2];
+    const src = fallback[id];
+    if (!src) return route.continue();
+    if (/^https?:/.test(src)) return route.fulfill({ response: await route.fetch({ url: src }) });
+    return route.fulfill({ path: src });
+  });
+}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -53,6 +68,7 @@ const failures = [];
 for (const wKey of widthKeys) {
   const { defaultBrowserType, ...ctxOpts } = WIDTHS[wKey];
   const context = await browser.newContext(ctxOpts);
+  if (fallback) await useFallback(context);
   fs.mkdirSync(path.join(outDir, wKey), { recursive: true });
   for (const p of PATHS) {
     const name = nameOf(p);

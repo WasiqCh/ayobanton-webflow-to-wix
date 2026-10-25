@@ -67,6 +67,10 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Every gold button uses the letter-by-letter hover | One button style, one behaviour |
 | 25 Oct 2026 | Store page: the second copy of the header that the live Webflow page has after its footer is dropped | It lay on top of the real header, blocked the Contact link and doubled the menu animations |
 | 25 Oct 2026 | Contact page gets Studio (London), Bespoke work and Orders details from the new gallery shop; the email stays info@ayobanton.com until the client confirms (the shop shows studio@ayobanton.com) | Open question for the client; the shop's "calculated at checkout" became "confirmed with your quote" because this site has no checkout |
+| 25 Oct 2026 | Sitemap served at /sitemap-pages.xml; on switch day add it in Google Search Console and as a Sitemap line in the Wix robots.txt editor | Wix reserves /sitemap.xml and builds it from its page registry, which is empty because the pages come from one catch-all route |
+| 25 Oct 2026 | Hidden style guide at /style-guide (noindex, not in menu or sitemap); the template's "Light Grey" swatch, which shows the gold accent, is labelled Gold | Design reference for future work |
+| 25 Oct 2026 | Product image column pinned to the live site's width (396px at 1440) | The template sized it by squeezing it against the old descriptions; the new, shorter ones made it twice as wide |
+| 25 Oct 2026 | Before/after screenshots use Webflow originals and local copies in place of Wix Media images (capture-baseline.mjs --media-fallback) | static.wixstatic.com is blocked on the capturing network except in the owner's Chrome |
 
 ## Licenses carried over
 
