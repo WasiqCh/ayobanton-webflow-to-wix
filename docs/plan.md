@@ -58,6 +58,11 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Enquiries go to a Wix Forms form ("Artwork enquiry") through a small server endpoint | Submissions appear in the Wix dashboard and notify the owner; artwork, size and finish arrive pre-filled |
 | 25 Oct 2026 | Product descriptions come from the new gallery shop; the 5 extra works use their series' text until the client sends their own | The old descriptions described the retired lightbox/giclée formats |
 | 25 Oct 2026 | Old product URLs redirect from the CMS (`oldSlug`), and retired store pages redirect to `/store`; `/checkout` is Wix's own reserved page and can't redirect | Keeps search rankings and old links working |
+| 25 Oct 2026 | Room-setting photos from the client go on product pages (switchable views, with the lit shot shown when the Lightbox finish is picked) and as a hover reveal on store cards; Home and the series pages stay identical | Room shots show scale and the finishes where buying decisions happen, without changing the pages that must match the old site |
+| 25 Oct 2026 | Room photos live in two new Artworks CMS fields ("Room photos" gallery, "Room photo (Lightbox finish)") and in Wix Media | The owner can add or swap shots in the dashboard without code |
+| 25 Oct 2026 | 28 of 29 room photos matched to 25 artworks; Chroma & Flora I and III, Floral Cyanotype I and IV, and Constellations have none and show only the artwork; "Golden Hour 2" is not in the catalog and waits for the client | Mapped from the photos' old Webflow names (see data/room-photo-mapping.csv) |
+| 25 Oct 2026 | Contact portrait: the client's new photo with its background removed locally (rembg with the BiRefNet model, mask only, full 3000×3690 resolution) | The spotlight needs a cut-out; a local model keeps the photo private and never alters its colour pixels |
+| 25 Oct 2026 | Contact spotlight in the site's gold, reworked from the prototype the client liked; the cycling words and counter are dropped | The prototype's pink and violet clash with the black-and-gold site |
 
 ## Licenses carried over
 

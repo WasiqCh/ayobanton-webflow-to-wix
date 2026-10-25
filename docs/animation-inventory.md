@@ -78,3 +78,14 @@ Built in the same style with GSAP and SplitType, using transform and opacity onl
 | Rule above the contact details draws in from the left | Scroll into view |
 | Intro, details and form fields fade up in reading order | Scroll into view |
 | Letter-by-letter "Send Message" button | Hover |
+| Spotlight portrait: a soft circle of gold light eases after the cursor and shows a gold-toned copy of the dimmed black-and-white portrait; it drifts around the face on touch screens or when the cursor is away; thin gold beams cross it slowly | Cursor, and continuous while on screen (off for reduced motion: a still, softly lit portrait) |
+
+## New animations (Store and product pages)
+
+Same rules: transform, opacity and clip-path only, and reduced motion swaps instantly.
+
+| Animation | Trigger |
+| --- | --- |
+| Store card: the room photo wipes up over the artwork, settling from a slight zoom | Hover or keyboard focus (mouse devices only) |
+| Product page: the chosen view wipes in behind a thin gold line while its photo settles from a slight zoom | Clicking a view thumbnail, arrow keys, or picking the Lightbox finish |
+| Product page: view thumbnails brighten, and a gold underline draws under the selected one | Hover and selection |
