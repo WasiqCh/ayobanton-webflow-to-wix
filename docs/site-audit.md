@@ -34,11 +34,11 @@ Checked 25 Oct 2026 by crawling the live site, reading the Webflow CMS through i
 
 ## Open content question
 
-Kind of Blue edition details in the CMS differ from the new gallery shop:
+Kind of Blue edition details in the Webflow CMS differ from the new gallery shop. They are in the products' "Editions info" field, which the live pages don't display, so visitors never saw them:
 
-| Works | Current edition note | New shop |
+| Works (new name, old name) | Current edition note | New shop |
 | --- | --- | --- |
-| Chroma & Flora I–IV (old "Frequency I–IV") | Unique 1/1, 30×40 cm | 4 sizes × 4 finishes |
-| Chroma & Flora V, Floral Cyanotype I–IV (old "Frequency V", "Variation I–IV") | Limited edition of 3 + 1 AP | 4 sizes × 4 finishes |
+| Chroma & Flora II (Frequency II), Chroma & Flora III (Frequency III), Chroma & Flora IV (Frequency I), Chroma & Flora V (Frequency IV) | Unique 1/1, 30×40 cm, £1,450 framed | 4 sizes × 4 finishes |
+| Chroma & Flora I (Frequency V), Floral Cyanotype I–IV (Variation IV, III, I, II) | Limited edition of 3 + 1 AP, £4,500 unframed / £5,250 framed | 4 sizes × 4 finishes |
 
 A unique 1/1 work can't come in 4 sizes, so the client has to confirm which is right before the catalog is built.
