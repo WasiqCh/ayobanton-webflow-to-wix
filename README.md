@@ -39,6 +39,7 @@ Wix can't import a Webflow site. Webflow exports static HTML/CSS/JS, and Wix Stu
 python -I scripts/crawl.py https://www.ayobanton.com > data/url-inventory.csv
 python -I scripts/build-redirects.py > data/redirects.csv
 node scripts/list-animations.js path/to/export/js/webflow.js
+node scripts/capture-baseline.mjs https://www.ayobanton.com private/baseline   # needs the playwright package
 ```
 
 Content (artwork, text, photography) © Ayo Banton. Not licensed for reuse.
