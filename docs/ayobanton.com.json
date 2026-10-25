@@ -1,0 +1,70 @@
+{
+  "source": "https://www.ayobanton.com",
+  "pages_analyzed": ["/", "/about"],
+  "tokens": {
+    "spacing": {
+      "scale": [5, 10, 15, 20, 30, 60, 100, 150, 180],
+      "base_unit": 5,
+      "section_padding_y": "150px"
+    },
+    "typography": {
+      "families": ["Big Shoulders Display"],
+      "weights_loaded": [300, 400, 500, 600, 700],
+      "weights_used": [400, 600],
+      "scale": [
+        { "role": "hero-name", "size": "216px", "weight": "600", "line_height": "~1.0", "letter_spacing": "-6px", "transform": "uppercase", "family": "Big Shoulders Display" },
+        { "role": "display (h1, h2)", "size": "144px", "weight": "600", "line_height": "144px", "letter_spacing": "normal", "transform": "uppercase", "family": "Big Shoulders Display" },
+        { "role": "section-title", "size": "48px", "weight": "400", "transform": "uppercase", "family": "Big Shoulders Display" },
+        { "role": "h3 (project names)", "size": "24px", "weight": "400", "line_height": "36px", "transform": "uppercase", "family": "Big Shoulders Display" },
+        { "role": "intro / lead", "size": "22.4px", "weight": "400", "line_height": "31.36px", "letter_spacing": "0.5px", "family": "Big Shoulders Display" },
+        { "role": "nav + body", "size": "20px", "weight": "400", "line_height": "31.36px", "letter_spacing": "0.25px", "transform": "uppercase (nav)", "family": "Big Shoulders Display" }
+      ]
+    },
+    "colors": [
+      { "role": "background", "value": "#090909" },
+      { "role": "text-primary", "value": "#FFFFFF" },
+      { "role": "text-secondary", "value": "#FFFFFF99" },
+      { "role": "accent (signature only)", "value": "#C39C5D" },
+      { "role": "overlay-strong", "value": "#090909D9" },
+      { "role": "overlay-soft", "value": "#09090973" },
+      { "role": "muted-dark", "value": "#35353599" }
+    ],
+    "radius": ["0px"],
+    "shadows": ["0 2px 20px 0 rgba(0,0,0,0.2)", "15px -15px 10px 0 rgba(0,0,0,0.4)"],
+    "image_ratios": [
+      { "usage": "hero", "ratio": "16:10 full-bleed (1440x900 viewport)" },
+      { "usage": "project / artwork thumbnail", "ratio": "3:4 portrait, object-fit cover" }
+    ],
+    "grid": { "max_width": "95% (1354px at 1440)", "columns": 1, "gutter": "n/a, single column", "breakpoints": ["991px", "767px", "479px"] }
+  },
+  "taste": [
+    {
+      "name": "One condensed face for everything",
+      "trigger": "When choosing type for a portfolio that mixes a 216px name, poster headings and long artist statements",
+      "decision": "Chose Big Shoulders Display alone, in 2 weights (400, 600), over a display face paired with a separate body face",
+      "reason": "Condensed uppercase reads like exhibition wall lettering, so the whole site sounds like one curator's voice instead of a template",
+      "evidence": ["137 of 137 sampled text elements use Big Shoulders Display", "only weights 400 and 600 used, though 300-700 are loaded", "nav, h1-h3 and body all from the same family"]
+    },
+    {
+      "name": "The wall stays black so the art supplies the colour",
+      "trigger": "When deciding how much brand colour to put around saturated floral photographs",
+      "decision": "Chose a near-black #090909 field with white text and a single gold accent used once, over a coloured brand palette, cards or tinted panels",
+      "reason": "In a gallery the wall recedes; the reds of Brutiful and the blues of Kind of Blue stay the only chroma on screen",
+      "evidence": ["#090909 covers 82.4% of painted surface", "gold #C39C5D appears on 1 text element (the signature)", "0 border radii, 0 card containers", "secondary text is white at 60% opacity rather than a grey hue"]
+    },
+    {
+      "name": "Poster scale, then quiet reading",
+      "trigger": "When building hierarchy between headings and text",
+      "decision": "Chose extreme jumps (216px and 144px display against 20-24px text, about 7:1) over a gradual modular scale with mid-size headings",
+      "reason": "Each section opens like a poster title, then drops to a calm reading size, so the visitor always knows where a new room begins",
+      "evidence": ["sizes used: 216, 144, 48, 24, 22.4, 20px", "no sizes between 48px and 144px", "144px headings set at line-height 1.0, uppercase"]
+    },
+    {
+      "name": "One work at a time, slow procession",
+      "trigger": "When listing the four series on the home page",
+      "decision": "Chose a single centred column of portrait thumbnails separated by 150px section padding and scroll reveals, over a 2-4 column card grid",
+      "reason": "Seeing one series at a time mimics walking past framed works; a grid would turn the art into products to compare",
+      "evidence": ["0 CSS grids on the home page", "thumbnails 3:4 at ~310px wide (21% of a 1440px viewport)", "section padding 150px top and bottom", "image reveal and scale-on-scroll animations on each thumbnail"]
+    }
+  ]
+}
