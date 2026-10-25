@@ -48,7 +48,7 @@ The goal is an identical result on Wix. "Native" means Wix Studio's built-in ani
 | --- | --- | --- |
 | Logos marquee | Page load, 20 s loop | Native if available, else code |
 | Hamburger icon open / close | Menu open, close, click | Native menu, or code |
-| Letter-by-letter button text (custom GSAP 3.12.5, `anm-stagger-btn` attributes) | Hover | Code. **Correction:** the script is on every page but no live element uses it. The new Contact page uses it on its Send Message button |
+| Letter-by-letter button text (custom GSAP 3.12.5, `anm-stagger-btn` attributes) | Hover | Code. **Correction:** the script is on every page but no live element uses it. The new site uses it on every gold button (see below) |
 
 ## Third-party libraries on the live pages
 
@@ -77,15 +77,16 @@ Built in the same style with GSAP and SplitType, using transform and opacity onl
 | Title letters slide up out of their line | Page load |
 | Rule above the contact details draws in from the left | Scroll into view |
 | Intro, details and form fields fade up in reading order | Scroll into view |
-| Letter-by-letter "Send Message" button | Hover |
+| Letter-by-letter "Send Message" button (now on every gold button: Send Message, Enquire About This Work, Send Enquiry, the Store and 404 Contact Us, Explore Collections). The script's copy of the label is pinned over the original, so it lands exactly in place | Hover |
 | Spotlight portrait: a soft circle of gold light eases after the cursor and shows a gold-toned copy of the dimmed black-and-white portrait; it drifts around the face on touch screens or when the cursor is away; thin gold beams cross it slowly | Cursor, and continuous while on screen (off for reduced motion: a still, softly lit portrait) |
 
-## New animations (Store and product pages)
+## New animations (product pages)
+
+A room-photo hover on store cards was tried and removed at the owner's request; store cards have no hover effect.
 
 Same rules: transform, opacity and clip-path only, and reduced motion swaps instantly.
 
 | Animation | Trigger |
 | --- | --- |
-| Store card: the room photo wipes up over the artwork, settling from a slight zoom | Hover or keyboard focus (mouse devices only) |
 | Product page: the chosen view wipes in behind a thin gold line while its photo settles from a slight zoom | Clicking a view thumbnail, arrow keys, or picking the Lightbox finish |
 | Product page: view thumbnails brighten, and a gold underline draws under the selected one | Hover and selection |

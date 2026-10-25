@@ -63,6 +63,10 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | 28 of 29 room photos matched to 25 artworks; Chroma & Flora I and III, Floral Cyanotype I and IV, and Constellations have none and show only the artwork; "Golden Hour 2" is not in the catalog and waits for the client | Mapped from the photos' old Webflow names (see data/room-photo-mapping.csv) |
 | 25 Oct 2026 | Contact portrait: the client's new photo with its background removed locally (rembg with the BiRefNet model, mask only, full 3000×3690 resolution) | The spotlight needs a cut-out; a local model keeps the photo private and never alters its colour pixels |
 | 25 Oct 2026 | Contact spotlight in the site's gold, reworked from the prototype the client liked; the cycling words and counter are dropped | The prototype's pink and violet clash with the black-and-gold site |
+| 25 Oct 2026 | Store-card room-photo hover removed; room photos stay on product pages | Owner did not like it on the store grid |
+| 25 Oct 2026 | Every gold button uses the letter-by-letter hover | One button style, one behaviour |
+| 25 Oct 2026 | Store page: the second copy of the header that the live Webflow page has after its footer is dropped | It lay on top of the real header, blocked the Contact link and doubled the menu animations |
+| 25 Oct 2026 | Contact page gets Studio (London), Bespoke work and Orders details from the new gallery shop; the email stays info@ayobanton.com until the client confirms (the shop shows studio@ayobanton.com) | Open question for the client; the shop's "calculated at checkout" became "confirmed with your quote" because this site has no checkout |
 
 ## Licenses carried over
 
