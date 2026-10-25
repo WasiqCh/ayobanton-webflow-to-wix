@@ -50,6 +50,19 @@ The goal is an identical result on Wix. "Native" means Wix Studio's built-in ani
 | Hamburger icon open / close | Menu open, close, click | Native menu, or code |
 | Letter-by-letter button text (custom GSAP 3.12.5, `anm-stagger-btn` attributes) | Hover, every page | Code |
 
+## Third-party libraries on the live pages
+
+| Library | Version | Used for |
+| --- | --- | --- |
+| GSAP | 3.12.5 | Letter-by-letter button hover |
+| SplitType | 0.3.4 | Splitting text into letters for the GSAP effect |
+| jQuery Ripples | 0.6.3 | Water-ripple effect on `.blue-bg` sections (About, Projects) |
+| Webflow runtime (IX2) | site build | All 29 Webflow animations |
+
+## Update: coded frontend (25 Oct 2026)
+
+The frontend is now built in code (see [plan.md](plan.md)), so all of the above runs **unchanged**: the original Webflow runtime and libraries are served with the pages. On Home, About, Projects and the 4 series pages, scroll reveals, scroll-linked effects and the nav text-roll hover were verified locally, with no script errors. Desktop renders pixel-identical to the live site.
+
 ## Trade-off to remember
 
 Everything marked "Code" looks identical, but it can't be adjusted in the Wix editor. Changing its timing later means editing code.

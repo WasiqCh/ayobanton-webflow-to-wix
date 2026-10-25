@@ -27,7 +27,7 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 
 1. Two days before: lower the TTL (how long DNS answers are cached) on the website records.
 2. Save a copy of every DNS record, especially the 5 Google MX records.
-3. At a quiet hour: move the Wix plan from the 2021 site to the new site, then connect the domain to the new site.
+3. At a quiet hour: complete the headless migration on "Ayo Banton Digital" (it keeps its plan and domain), then point the domain's website records at Wix.
 4. Check right away: HTTPS padlock on `www` and the bare domain, MX records unchanged, a test email delivered, redirects working.
 5. For 24–48 h, some visitors may still reach Webflow while DNS caches expire. Both sites work, so that's fine.
 6. Rollback: point the website records back at Webflow (minutes). Webflow stays paid until aftercare ends.
@@ -47,6 +47,9 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Animations recreated identically, using code where Wix's built-in effects can't match | Client wants an identical feel |
 | 25 Oct 2026 | Custom code verified on the free Wix plan: a test snippet runs on the preview URL | Coded animations can be tested before the switch |
 | 25 Oct 2026 | Public repo with no client images, emails or private data | The client hasn't approved publishing their materials |
+| 25 Oct 2026 | **Changed:** build the frontend in code and attach it to the existing "Ayo Banton Digital" site through Wix's headless migration ("Moving your site to a custom frontend"), instead of rebuilding in the Studio editor | The Studio editor can't be driven reliably by automation. The client won't edit layouts. Wix keeps the site's plan, domain and data, and offers "Switch back". Animations stay identical |
+| 25 Oct 2026 | The frontend source lives in a separate **private** repo | It is built on a purchased Webflow template |
+| 25 Oct 2026 | The blank Studio site created earlier is no longer needed | Delete only with the owner's approval |
 
 ## Licenses carried over
 
