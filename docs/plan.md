@@ -54,6 +54,10 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Artwork photos moved to the site's Wix Media; smaller sizes use Wix's on-the-fly resizing | Webflow's CDN stops serving once Webflow is cancelled |
 | 25 Oct 2026 | Frontend runs as a Wix Astro project, not a plain static upload | Wix's static hosting only serves `/about/`, while the site's existing links and Google's index use `/about`. One Astro route serves each page unchanged at its clean URL |
 | 25 Oct 2026 | Local patch for a Windows path bug in `@wix/astro-wix-hosting-adapter` 3.0.4 | `wix build` fails on Windows without it; the patch only makes a path root-relative |
+| 25 Oct 2026 | Artworks live in a Wix CMS collection ("Artworks") read by the store pages at request time | The owner edits names, images, text, sizes and finishes in the dashboard with no code change or rebuild |
+| 25 Oct 2026 | Enquiries go to a Wix Forms form ("Artwork enquiry") through a small server endpoint | Submissions appear in the Wix dashboard and notify the owner; artwork, size and finish arrive pre-filled |
+| 25 Oct 2026 | Product descriptions come from the new gallery shop; the 5 extra works use their series' text until the client sends their own | The old descriptions described the retired lightbox/giclée formats |
+| 25 Oct 2026 | Old product URLs redirect from the CMS (`oldSlug`), and retired store pages redirect to `/store`; `/checkout` is Wix's own reserved page and can't redirect | Keeps search rankings and old links working |
 
 ## Licenses carried over
 
