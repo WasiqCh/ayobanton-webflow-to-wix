@@ -2,7 +2,7 @@
 
 Source: the Webflow export's `js/webflow.js` (Webflow Interactions, "IX2") plus custom GSAP code in each page's footer. Generated with `node scripts/list-animations.js <path-to-webflow.js>`.
 
-**Total:** 29 Webflow animations wired to 41 triggers, plus 1 custom GSAP effect used site-wide.
+**Total:** 29 Webflow animations wired to 41 triggers, plus 1 custom GSAP effect (defined site-wide, unused on the live site).
 
 The goal is an identical result on Wix. "Native" means Wix Studio's built-in animations; "Code" means Velo or custom code. The approach column is a plan, to be confirmed by tests in Phase 2.
 
@@ -48,7 +48,7 @@ The goal is an identical result on Wix. "Native" means Wix Studio's built-in ani
 | --- | --- | --- |
 | Logos marquee | Page load, 20 s loop | Native if available, else code |
 | Hamburger icon open / close | Menu open, close, click | Native menu, or code |
-| Letter-by-letter button text (custom GSAP 3.12.5, `anm-stagger-btn` attributes) | Hover, every page | Code |
+| Letter-by-letter button text (custom GSAP 3.12.5, `anm-stagger-btn` attributes) | Hover | Code. **Correction:** the script is on every page but no live element uses it. The new Contact page uses it on its Send Message button |
 
 ## Third-party libraries on the live pages
 
@@ -66,3 +66,15 @@ The frontend is now built in code (see [plan.md](plan.md)), so all of the above 
 ## Trade-off to remember
 
 Everything marked "Code" looks identical, but it can't be adjusted in the Wix editor. Changing its timing later means editing code.
+
+## New animations (Contact page)
+
+Built in the same style with GSAP and SplitType, using transform and opacity only, and switched off for visitors who prefer reduced motion:
+
+| Animation | Trigger |
+| --- | --- |
+| Portrait rises into its frame and settles | Page load |
+| Title letters slide up out of their line | Page load |
+| Rule above the contact details draws in from the left | Scroll into view |
+| Intro, details and form fields fade up in reading order | Scroll into view |
+| Letter-by-letter "Send Message" button | Hover |
