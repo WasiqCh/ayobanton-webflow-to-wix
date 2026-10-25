@@ -10,7 +10,7 @@ This repo holds the plan, the audit of the old site, the URL and redirect maps, 
 | --- | --- | --- |
 | 0 | Alignment and inventory | Done |
 | 1 | Content decisions (catalog, enquiry copy, Contact page) | Not started |
-| 2 | Build the coded frontend (private repo), preview on Wix | In progress: Home, About, Projects done locally |
+| 2 | Build the coded frontend (private repo), preview on Wix | In progress: Home, About, Projects live on the Wix preview |
 | 3 | Parity QA: screenshots, links, SEO, accessibility | Not started |
 | 4 | Domain switch | Not started |
 | 5 | Aftercare, then cancel Webflow | Not started |

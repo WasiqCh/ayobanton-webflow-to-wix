@@ -50,6 +50,10 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | **Changed:** build the frontend in code and attach it to the existing "Ayo Banton Digital" site through Wix's headless migration ("Moving your site to a custom frontend"), instead of rebuilding in the Studio editor | The Studio editor can't be driven reliably by automation. The client won't edit layouts. Wix keeps the site's plan, domain and data, and offers "Switch back". Animations stay identical |
 | 25 Oct 2026 | The frontend source lives in a separate **private** repo | It is built on a purchased Webflow template |
 | 25 Oct 2026 | The blank Studio site created earlier is no longer needed | Delete only with the owner's approval |
+| 25 Oct 2026 | Headless migration started on "Ayo Banton Digital" (preview only; live site untouched) | Wix created a separate deploy site for the preview; "Complete Migration" is the only step that switches anything |
+| 25 Oct 2026 | Artwork photos moved to the site's Wix Media; smaller sizes use Wix's on-the-fly resizing | Webflow's CDN stops serving once Webflow is cancelled |
+| 25 Oct 2026 | Frontend runs as a Wix Astro project, not a plain static upload | Wix's static hosting only serves `/about/`, while the site's existing links and Google's index use `/about`. One Astro route serves each page unchanged at its clean URL |
+| 25 Oct 2026 | Local patch for a Windows path bug in `@wix/astro-wix-hosting-adapter` 3.0.4 | `wix build` fails on Windows without it; the patch only makes a path root-relative |
 
 ## Licenses carried over
 
