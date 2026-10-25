@@ -1,0 +1,7 @@
+# Client data, screenshots and exports stay local: the repo is public.
+private/
+*.zip
+
+node_modules/
+.DS_Store
+Thumbs.db

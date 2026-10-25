@@ -1,0 +1,47 @@
+old_path,new_path,action,note
+/,/,keep,rebuilt at the same URL
+/401,/,301,"Webflow store page, not rebuilt"
+/about,/about,keep,rebuilt at the same URL
+/category/brutiful,/category/brutiful,keep,rebuilt at the same URL
+/category/into-dust,/category/into-dust,keep,rebuilt at the same URL
+/category/kind-of-blue,/category/kind-of-blue,keep,rebuilt at the same URL
+/category/luminous-bones,/category/luminous-bones,keep,rebuilt at the same URL
+/checkout,/store,301,"Webflow store page, not rebuilt"
+/collections,/collections,keep,rebuilt at the same URL
+/collections/brutiful,/collections/brutiful,keep,rebuilt at the same URL
+/collections/into-dust,/collections/into-dust,keep,rebuilt at the same URL
+/collections/kind-of-blue,/collections/kind-of-blue,keep,rebuilt at the same URL
+/collections/luminous-bones,/collections/luminous-bones,keep,rebuilt at the same URL
+/order-confirmation,/store,301,"Webflow store page, not rebuilt"
+/paypal-checkout,/store,301,"Webflow store page, not rebuilt"
+/product/blueprint,/product/blueprint,pending,"extra artwork, waiting on client decision"
+/product/dark-matter,/product/where-growth-persists,301,Dark Matter -> Where Growth Persists
+/product/deep-field,/product/between-bloom-and-decay,301,Deep Field -> Between Bloom and Decay
+/product/dissolution,/product/nebula,301,Dissolution -> Nebula
+/product/frequency-i-1,/product/chroma-flora-iv,301,Frequency I -> Chroma & Flora IV
+/product/frequency-ii,/product/chroma-flora-ii,301,Frequency II -> Chroma & Flora II
+/product/frequency-iii,/product/chroma-flora-iii,301,Frequency III -> Chroma & Flora III
+/product/frequency-iv,/product/chroma-flora-v,301,Frequency IV -> Chroma & Flora V
+/product/frequency-v,/product/chroma-flora-i,301,Frequency V -> Chroma & Flora I
+/product/in-cold-light,/product/in-cold-light,pending,"extra artwork, waiting on client decision"
+/product/love-supreme,/product/love-supreme,keep,same name
+/product/lumen,/product/lumen,pending,"extra artwork, waiting on client decision"
+/product/maiden-voyage,/product/maiden-voyage,pending,"extra artwork, waiting on client decision"
+/product/radiance,/product/radiance,pending,"extra artwork, waiting on client decision"
+/product/relic,/product/constellations,301,Relic -> Constellations
+/product/requiem,/product/sonata,301,Requiem -> Sonata
+/product/resonance,/product/basel,301,Resonance -> Basel
+/product/seven-steps-to-heaven,/product/seven-steps-to-heaven,keep,same name
+/product/spectrum,/product/x-ray-flora-i,301,Spectrum -> X-Ray Flora I
+/product/spoils,/product/regeneration,301,Spoils -> Regeneration
+/product/stardust,/product/stardust-in-bloom,301,Stardust -> Stardust in Bloom
+/product/strange-fruit,/product/brutiful,301,Strange Fruit -> Brutiful
+/product/surrender,/product/black-ash-iii,301,Surrender -> Black Ash III
+/product/the-stone-garden,/product/black-ash-ii,301,The Stone Garden -> Black Ash II
+/product/twilight,/product/black-ash-i,301,Twilight -> Black Ash I
+/product/variation-i,/product/floral-cyanotype-iii,301,Variation I -> Floral Cyanotype III
+/product/variation-ii,/product/floral-cyanotype-iv,301,Variation II -> Floral Cyanotype IV
+/product/variation-iii,/product/floral-cyanotype-ii,301,Variation III -> Floral Cyanotype II
+/product/variation-iv,/product/floral-cyanotype-i,301,Variation IV -> Floral Cyanotype I
+/product/velvet,/product/velvet,keep,same name
+/store,/store,keep,rebuilt at the same URL
