@@ -71,6 +71,8 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Hidden style guide at /style-guide (noindex, not in menu or sitemap); the template's "Light Grey" swatch, which shows the gold accent, is labelled Gold | Design reference for future work |
 | 25 Oct 2026 | Product image column pinned to the live site's width (396px at 1440) | The template sized it by squeezing it against the old descriptions; the new, shorter ones made it twice as wide |
 | 25 Oct 2026 | Before/after screenshots use Webflow originals and local copies in place of Wix Media images (capture-baseline.mjs --media-fallback) | static.wixstatic.com is blocked on the capturing network except in the owner's Chrome |
+| 27 Oct 2026 | Form notifications also email info@ayobanton.com (two custom Wix automations copying Wix's own, submitter excluded); Wix's originals keep emailing the Wix login, ayobanton21@gmail.com | The client watches info@ but sorts mail from his Wix login; the app-made notifications only email the account owner |
+| 27 Oct 2026 | Floral Cyanotype I-IV and Chroma & Flora III and V hidden from the store (CMS visible = false) | Client: mostly sold; 1/1 replacements to follow |
 
 ## Licenses carried over
 
