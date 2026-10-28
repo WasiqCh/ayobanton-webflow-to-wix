@@ -73,6 +73,13 @@ Both sites stay live throughout, so there's never a moment when nothing answers.
 | 25 Oct 2026 | Before/after screenshots use Webflow originals and local copies in place of Wix Media images (capture-baseline.mjs --media-fallback) | static.wixstatic.com is blocked on the capturing network except in the owner's Chrome |
 | 27 Oct 2026 | Form notifications also email info@ayobanton.com (two custom Wix automations copying Wix's own, submitter excluded); Wix's originals keep emailing the Wix login, ayobanton21@gmail.com | The client watches info@ but sorts mail from his Wix login; the app-made notifications only email the account owner |
 | 27 Oct 2026 | Floral Cyanotype I-IV and Chroma & Flora III and V hidden from the store (CMS visible = false) | Client: mostly sold; 1/1 replacements to follow |
+| 28 Oct 2026 | **Changed:** only Chroma & Flora III and V stay hidden; Floral Cyanotype I-IV are back | The client's later messages name only those two and say to keep the other Kind of Blue works; he will say which cyanotypes have sold |
+| 28 Oct 2026 | Golden Hour 2 added to Brutiful, with the client's description and room photo | Client sent the work but no series; placed in Brutiful until he says otherwise |
+| 28 Oct 2026 | Links to hidden works redirect (302) to their series page | Old Google links to removed works land somewhere useful instead of a 404 |
+| 28 Oct 2026 | SPF published: `v=spf1 include:_spf.google.com include:spf.stackmail.com ~all` | Google Workspace sends the mail; the domain still has Stackmail CNAMEs (imap/smtp/webmail), so its senders are covered too. Softfail, so nothing is rejected |
+| 28 Oct 2026 | Switch: headless migration completed (`wix finalize-migration`), then the A record set to 185.230.63.107 and `www` CNAME to cdn1.wixdns.net (Wix defaults). MX and all other records unchanged | Wix's automatic "connect" left the Webflow records in place, so they were edited by hand. Rollback: A 198.202.211.1, `www` CNAME cdn.webflow.com |
+| 28 Oct 2026 | **Lesson:** Wix's certificate for ayobanton.com had expired on 1 Aug 2026 (the domain pointed at Webflow, so it couldn't renew). Wix issues a new one only after the records point at Wix, so visitors who got the new records saw a certificate error from about 00:45 to 01:03 UTC. Next time, check the certificate the target serves (`openssl s_client`) before switching, and switch at the quietest hour | Recorded so the gap is known and avoidable |
+| 28 Oct 2026 | robots.txt replaced in Wix's editor with the default rules plus `Sitemap: https://www.ayobanton.com/sitemap-pages.xml` | Wix's default pointed at /sitemap.xml, which 404s on this headless site |
 
 ## Licenses carried over
 
